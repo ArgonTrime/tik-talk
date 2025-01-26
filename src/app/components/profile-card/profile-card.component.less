@@ -1,0 +1,52 @@
+@import "../../styles/variables.less";
+
+.profile-card {
+    background-color: @dark-color;
+    border: 1px solid @light-color;
+    padding: 32px 24px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        flex-basis: 25%;
+    }
+
+    &__avatar {
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        flex-basis: 23%;
+    }
+
+    &__description {
+        font-weight: 500;
+        line-height: 16px;
+        flex-basis: 27%;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: center;
+        flex-basis: 25%;
+    }
+}
