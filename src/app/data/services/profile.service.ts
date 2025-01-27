@@ -8,7 +8,6 @@ import { Profile } from "../interfaces/profile.interface";
 export class ProfileService {
     http = inject(HttpClient)
     baseURL = 'https://icherniakov.ru/yt-course/'
-    constructor(){}
 
     getTestProfiles(){
         return this.http.get<Profile[]>(`${this.baseURL}account/test_accounts`)
