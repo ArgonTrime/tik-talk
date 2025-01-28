@@ -1,0 +1,41 @@
+<img 
+    src="/assets/images/logo-small.svg"
+    alt="logo-sidebar"
+>
+
+<nav>
+    <ul class="sidebar-menu">
+        <li>
+            <button class="sidebar-menu__item">
+                <img src="/assets/images/home-icon.svg" alt="home">
+                <span>Моя страница</span>
+            </button>
+        </li>
+        <li>
+            <button class="sidebar-menu__item">
+                <img src="/assets/images/chat-icon.svg" alt="chat">
+                <span>Чаты</span>
+            </button>
+        </li>
+        <li>
+            <button class="sidebar-menu__item">
+                <img src="/assets/images/search-icon.svg" alt="search">
+                <span>Поиск</span>
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<p class="medium-text mb20 mt20">Подписчики</p>
+
+<pre>{{subscribes$ | async}}</pre>
+<subscriber-card></subscriber-card>
+
+<div class="mt20 to-subscribers">
+    <a
+        [routerLink]="['/subscribers']"
+        class="to-subscribers-link medium-text"
+    >
+        Все подписчики
+    </a>
+</div>

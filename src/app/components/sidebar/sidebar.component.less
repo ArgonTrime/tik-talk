@@ -1,0 +1,47 @@
+@import "../../styles/variables.less";
+:host {
+    display: block;
+    padding: 20px 12px;
+
+    height: 100vh;
+
+    background-color: @dark-color;
+}
+
+.sidebar-menu {
+    display: grid;
+    grid-gap: 8px;
+    list-style: none;
+
+    &__item {
+        padding: 16px 12px;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        background: none;
+        border-radius: 2px;
+        
+        display: grid;
+        grid-template-columns: 16px 1fr max-content;
+        grid-gap: 12px;
+        align-items: center;
+        
+        color: @light-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+
+
+        &:hover,
+        &:focus-visible {
+            background-color: @dark-active-color;
+            color: @primary-color;
+        }
+    }
+}
+
+.to-subscribers-link {
+    color: @primary-color;
+    text-decoration: none;
+}
